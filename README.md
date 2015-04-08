@@ -1,2 +1,3 @@
 # debugJS
-Code to show JS debug technique at Devoxx
+Code to show JS debug technics at Devoxx
+
