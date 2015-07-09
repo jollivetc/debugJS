@@ -1,3 +1,2 @@
 # debugJS
-Code to show JS debug technics at Devoxx
-
+Code to show JS debug technics for BBL
