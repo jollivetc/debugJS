@@ -1,6 +1,13 @@
 # debugJS
 
-Code to show JS debug technics at Devoxx France 2015.
+Code to show JS debug technics at Devoxx Belgium 2015.
+
+To run this presentation, you need to
+
+* git clone the repository
+* npm install
+* node app.js
+* open a browser on http://localhost:3000
 
 This presentation as evolved. There are now branches for the different version of the presentation.
 
