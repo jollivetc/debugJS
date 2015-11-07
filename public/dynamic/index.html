@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/index.html">#debugJS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <button id="btnAjax">call Ajax</button>
+            <button id="btnHello">Log Hello</button>
+            <button id="btnCode">Show Code</button>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+              <p><span></span></p>
+            </div>
+        </div>
+        <div class="row" style="display: none;" id="code">
+          <div class="col-md-12">
+            <div clas="row">
+
+              <textarea id="textArea">
+function debugAccess(obj, prop, debugGet){
+
+    var origValue = obj[prop];
+
+    Object.defineProperty(obj, prop, {
+        get: function () {
+            if ( debugGet )
+                debugger;
+            return origValue;
+        },
+        set: function(val) {
+            debugger;
+            return origValue = val;
+        }
+    });
+
+};
+            </textarea>
+          </div>
+          <div class="row">
+            <ul>
+              <li>
+                <a>https://github.com/paulirish/devtools-addons/wiki/Snippets</a>
+              </li>
+              <li>
+                <a>http://bgrins.github.io/devtools-snippets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>modern debugging of JavaScript by Christophe Jollivet </p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>@jollivetc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../assets/jquery/dist/jquery.js"></script>
+    <script src="../assets/codemirror/codemirror.js"></script>
+    <link rel="stylesheet" href="../assets/codemirror/codemirror.css">
+    <script src="../assets/codemirror/javascript/javascript.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
