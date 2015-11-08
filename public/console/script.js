@@ -1,6 +1,7 @@
 var person1 = {
     firstName: 'Christophe',
     lastName: 'Jollivet',
+    age: 40,
     social: {
         twitter: '@jollivetc',
         github: 'jollivetc'
@@ -9,6 +10,7 @@ var person1 = {
 var person2 = {
     firstName: 'John',
     lastName: 'Doe',
+    age: 42,
     social: {
         twitter: '@JohnDoe',
         github: 'johndoe'
@@ -35,7 +37,7 @@ $(document).ready(function () {
         console.log("I am an interpoladed %s", 'String');
         console.log("it also works with integer %d and float %f", 42, 3.1415);
         console.log("it even work with object : %O", person1);
-        console.log("or HTML element : %o", domElement);
+        console.log("or HTML element : %o", document.getElementById("btnDiv"));
 
     };
 
