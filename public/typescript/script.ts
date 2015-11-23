@@ -1,30 +1,28 @@
-class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
-     
-    constructor (element: HTMLElement) { 
-        this.element = element;
-        this.element.innerHTML += "Il est : ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerHTML = new Date().toUTCString();
+class Person{
+    firstName : String;
+    lastName : String;
+    
+    constructor (firsName : String, lastName : String){
+        this.firstName = firsName;
+        this.lastName = lastName;
     }
- 
-    start() {
-        this.timerToken = setInterval(
-            () => this.span.innerHTML= new Date().toUTCString(), 500
-            );
+    
+    greet(){
+        console.log('hello my name is %s %s', this.firstName, this.lastName);
     }
- 
-    stop() {
-        clearTimeout(this.timerToken);
+    
+    throwError(){
+        throw new Error("Ouch !");
     }
- 
 }
  
 window.onload = () => {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
+    var person = new Person('John', 'Doe');
+    
+    document.getElementById('btnLog').addEventListener('click', function(){
+        person.greet();
+    });
+    document.getElementById('btnThrow').addEventListener('click', function(){
+        person.throwError();
+    });
 };

@@ -1,23 +1,23 @@
-var Greeter = (function () {
-    function Greeter(element) {
-        this.element = element;
-        this.element.innerHTML += "Il est : ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerHTML = new Date().toUTCString();
+var Person = (function () {
+    function Person(firsName, lastName) {
+        this.firstName = firsName;
+        this.lastName = lastName;
     }
-    Greeter.prototype.start = function () {
-        var _this = this;
-        this.timerToken = setInterval(function () { return _this.span.innerHTML = new Date().toUTCString(); }, 500);
+    Person.prototype.greet = function () {
+        console.log('hello my name is %s %s', this.firstName, this.lastName);
     };
-    Greeter.prototype.stop = function () {
-        clearTimeout(this.timerToken);
+    Person.prototype.throwError = function () {
+        throw new Error("Ouch !");
     };
-    return Greeter;
+    return Person;
 })();
 window.onload = function () {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
+    var person = new Person('John', 'Doe');
+    document.getElementById('btnLog').addEventListener('click', function () {
+        person.greet();
+    });
+    document.getElementById('btnThrow').addEventListener('click', function () {
+        person.throwError();
+    });
 };
 //# sourceMappingURL=script.js.map
