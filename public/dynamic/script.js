@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
     $("#btnCode").on("click", function(){
         $("#code").show();
-        var editor = CodeMirror.fromTextArea(document.getElementById("textArea"), {
+        CodeMirror.fromTextArea(document.getElementById("textArea"), {
             mode: "javascript"
         });
     })
