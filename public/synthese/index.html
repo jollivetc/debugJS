@@ -1,0 +1,217 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css" />
+    <script src="../assets/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="hello-world.html">
+</head>
+
+<body>
+
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/index.html">Synthèse</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+		<div class="row">
+			<h1>Console</h1>
+		</div>
+        <div class="row">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>feature</th>
+						<th>Chrome</th>
+						<th>IE 11</th>
+						<th>Safari</th>
+						<th>Firefox</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>String interpolation</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="warning">no dom folding</td>
+					</tr>
+					<tr>
+						<td>log level</td>
+						<td class="success">OK</td>
+						<td class="warning">no stack on error</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>log group</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="warning">no folding</td>
+					</tr>
+					<tr>
+						<td>timing</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>count</td>
+						<td class="success">OK</td>
+						<td class="warning">only one line</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>trace</td>
+						<td class="success">OK</td>
+						<td class="warning">non clickable</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>table</td>
+						<td class="success">OK</td>
+						<td class="danger">none</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>filtered table</td>
+						<td class="success">OK</td>
+						<td class="danger">none</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+
+		<div class="row">
+			<h1>BreakPoints</h1>
+		</div>
+        <div class="row">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>feature</th>
+						<th>Chrome</th>
+						<th>IE 11</th>
+						<th>Safari</th>
+						<th>Firefox</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Basic</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="warning">no watches</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>Conditionnal</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>XHR</td>
+						<td class="success">OK</td>
+						<td class="danger">KO</td>
+						<td class="danger">KO</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>Events</td>
+						<td class="success">OK</td>
+						<td class="warning">breakpoint in JQuery</td>
+						<td class="danger">KO</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>DOM Modification</td>
+						<td class="success">OK</td>
+						<td class="danger">KO</td>
+						<td class="danger">KO</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>programmatic</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+		
+		<div class="row">
+			<h1>Asynchronous</h1>
+		</div>
+        <div class="row">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>feature</th>
+						<th>Chrome</th>
+						<th>IE 11</th>
+						<th>Safari</th>
+						<th>Firefox</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Throttling</td>
+						<td class="success">OK</td>
+						<td class="danger">KO</td>
+						<td class="danger">KO</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+					<tr>
+						<td>async call stack</td>
+						<td class="success">OK</td>
+						<td class="danger">KO</td>
+						<td class="danger">KO</td>
+						<td>johncarter@mail.com</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+		
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                  <p>#debugJS</p>
+              </div>
+              <div class="col-md-6">
+                  <a>https://github.com/jollivetc/debugJS/tree/codeursEnSeine</a>
+              </div>
+              <div class="col-md-4 text-right">
+                  <p>@jollivetc</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

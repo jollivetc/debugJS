@@ -7,5 +7,5 @@ app.listen(3000);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/', function(request, response){
-	response.send('{"name" : "Devoxx"}');
+	response.send('{"name" : "Codeurs en Seine"}');
 })
