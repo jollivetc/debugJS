@@ -5,15 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css" />
-    <script src="../assets/webcomponentsjs/webcomponents.js"></script>
-    <link rel="import" href="hello-world.html">
 </head>
 
 <body>
 
-
-    <!-- Add your site or application content here -->
-    <div class="header">
+   <div class="header">
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -45,7 +41,7 @@
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
-						<td class="warning">no dom folding</td>
+						<td class="warning">no dom or object folding, just navigation</td>
 					</tr>
 					<tr>
 						<td>log level</td>
@@ -59,7 +55,7 @@
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
-						<td class="warning">no folding</td>
+						<td class="warning">folding only in firebug</td>
 					</tr>
 					<tr>
 						<td>timing</td>
@@ -85,14 +81,14 @@
 					<tr>
 						<td>table</td>
 						<td class="success">OK</td>
-						<td class="danger">none</td>
+						<td class="danger">KO</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 					</tr>
 					<tr>
 						<td>filtered table</td>
 						<td class="success">OK</td>
-						<td class="danger">none</td>
+						<td class="danger">KO</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 					</tr>
@@ -120,42 +116,42 @@
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 						<td class="warning">no watches</td>
-						<td>johncarter@mail.com</td>
+						<td class="success">OK</td>
 					</tr>
 					<tr>
 						<td>Conditionnal</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
-						<td>johncarter@mail.com</td>
+						<td class="success">OK</td>
 					</tr>
 					<tr>
 						<td>XHR</td>
 						<td class="success">OK</td>
 						<td class="danger">KO</td>
 						<td class="danger">KO</td>
-						<td>johncarter@mail.com</td>
+						<td class="warning">Firebug</td>
 					</tr>
 					<tr>
 						<td>Events</td>
 						<td class="success">OK</td>
 						<td class="warning">breakpoint in JQuery</td>
 						<td class="danger">KO</td>
-						<td>johncarter@mail.com</td>
+						<td class="warning">breakpoint in JQuery</td>
 					</tr>
 					<tr>
 						<td>DOM Modification</td>
 						<td class="success">OK</td>
 						<td class="danger">KO</td>
 						<td class="danger">KO</td>
-						<td>johncarter@mail.com</td>
+						<td class="warning">Firebug</td>
 					</tr>
 					<tr>
 						<td>programmatic</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
 						<td class="success">OK</td>
-						<td>johncarter@mail.com</td>
+						<td class="success">OK</td>
 					</tr>
 				</tbody>
 			</table>
@@ -181,19 +177,50 @@
 						<td class="success">OK</td>
 						<td class="danger">KO</td>
 						<td class="danger">KO</td>
-						<td>johncarter@mail.com</td>
+						<td class="danger">KO</td>
 					</tr>
 					<tr>
 						<td>async call stack</td>
 						<td class="success">OK</td>
 						<td class="danger">KO</td>
 						<td class="danger">KO</td>
-						<td>johncarter@mail.com</td>
+						<td class="danger">KO</td>
 					</tr>
 				</tbody>
 			</table>
         </div>
-		
+		<div class="row">
+			<h1>Responsive</h1>
+		</div>
+        <div class="row">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>feature</th>
+						<th>Chrome</th>
+						<th>IE 11</th>
+						<th>Safari</th>
+						<th>Firefox</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>size</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+					</tr>
+					<tr>
+						<td>agent</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="success">OK</td>
+						<td class="warning">extension</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
     </div>
 
     <div class="footer">

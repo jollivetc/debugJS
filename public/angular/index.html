@@ -5,26 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css" />
-    <script src="../assets/webcomponentsjs/webcomponents.js"></script>
-    <link rel="import" href="hello-world.html">
+    <script src="../assets/angularjs/angularjs-1.4.8.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body ng-app="HelloApp">
 
    <div class="header">
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/index.html">Polymer</a>
+                    <a class="navbar-brand" href="/index.html">Angular</a>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" ng-controller="HelloCtrl as helloCtrl">
         <div class="row">
-			<x-helloworld></x-helloworld>
+            <div class="col-md-8">
+                <input ng-model="helloCtrl.inputContent"></input>
+                <button ng-click="helloCtrl.clicked()">Click to say Hello</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Hello {{helloCtrl.helloValue}}
+                </p>
+            </div>
         </div>
 
     </div>
