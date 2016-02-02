@@ -1,6 +1,6 @@
 # debugJS
 
-Code to show JS debug technics at Codeurs Seine 2015.
+Code to show JS debug technics at Devfest Paris 2016.
 
 To run this presentation, you need to
 
@@ -15,3 +15,4 @@ This presentation as evolved. There are now branches for the different version o
 * Brown Bag Lunch : bbl branch https://github.com/jollivetc/debugJS/tree/bbl
 * Devoxx Belgium 2015 : devoxxbe branch https://github.com/jollivetc/debugJS/tree/devoxxbe
 * Codeurs en Seine 2015 : codeursEnSeine branch : https://github.com/jollivetc/debugJS/tree/codeursEnSeine
+* Devfest 2016 : devfest branch : https://github.com/jollivetc/debugJS/tree/devfest
