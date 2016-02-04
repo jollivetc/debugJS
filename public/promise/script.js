@@ -1,20 +1,22 @@
 $(document).ready(function(){
     $("#latence").on("click", function(){
-      callLatence().then(callLatence);
+      callLatence()
+        .then(callLatence);
     });
     $("#error").on("click", function(){
-      callLatence().then(callError);
+      callLatence()
+        .then(callError);
     });
 
     function callLatence(){
       var promise = new Promise(function(resolve, reject){
         $.get('/latence')
           .done(function(data){
-            console.log("call latence with success");
+            console.log("called latence and received 2xx");
             resolve(data);
           })
           .fail(function(error){
-            console.log("call latence with error");
+            console.log("called latence and received 4xx or 5xx");
             reject(error);
           })
       })
@@ -24,11 +26,11 @@ $(document).ready(function(){
       var promise = new Promise(function(resolve, reject){
         $.get('/error')
           .done(function(data){
-            console.log("call error with success");
+            console.log("called error and received 2xx");
             resolve(data);
           })
           .fail(function(error){
-            console.log("call error with error");
+            console.log("called error and received 4xx or 5xx");
             reject(error);
           })
       })
