@@ -1,6 +1,6 @@
 # debugJS
 
-Code to show JS debug technics at Devfest Paris 2016.
+Code to show JS debug technics in Brown Bag Lunch, second version.
 
 To run this presentation, you need to
 
