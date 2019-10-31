@@ -1,10 +1,10 @@
 var person1 = {
-    firstName: 'Christophe',
-    lastName: 'Jollivet',
+    firstName: 'Jane',
+    lastName: 'Doe',
     age: 40,
     social: {
-        twitter: '@jollivetc',
-        github: 'jollivetc'
+        twitter: '@JaneDoe',
+        github: 'JaneDoe'
     }
 };
 var person2 = {
@@ -13,7 +13,7 @@ var person2 = {
     age: 42,
     social: {
         twitter: '@JohnDoe',
-        github: 'johndoe'
+        github: 'JohnDoe'
     }
 };
 var table = [person1, person2];
