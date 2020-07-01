@@ -1,6 +1,6 @@
 # debugJS
 
-Code to show JS debug technics at Devoxx France 2015.
+Code to show JS debug technics in conferences in 2015.
 
 This presentation as evolved. There are now branches for the different version of the presentation.
 
