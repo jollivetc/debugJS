@@ -36,14 +36,13 @@
             <div clas="row">
 
               <textarea id="textArea">
-function debugAccess(obj, prop, debugGet){
+function debugAccess(obj, prop){
 
     var origValue = obj[prop];
 
     Object.defineProperty(obj, prop, {
         get: function () {
-            if ( debugGet )
-                debugger;
+            debugger;
             return origValue;
         },
         set: function(val) {
@@ -51,7 +50,6 @@ function debugAccess(obj, prop, debugGet){
             return origValue = val;
         }
     });
-
 };
             </textarea>
           </div>
@@ -75,7 +73,7 @@ function debugAccess(obj, prop, debugGet){
                   <p>#debugJS</p>
               </div>
               <div class="col-md-6">
-                  <a>https://github.com/jollivetc/debugJS/tree/bbl2</a>
+                  <a>https://github.com/jollivetc/debugJS/tree/afup</a>
               </div>
               <div class="col-md-4 text-right">
                   <p>@jollivetc</p>

@@ -49,7 +49,7 @@ $(document).ready(function () {
     };
 
     function groupLog() {
-        console.group("We begin a groupe");
+        console.group("We begin a group");
         console.log("I am a log in a group");
         console.log("I am in the same group");
         console.group("I am a nested group");

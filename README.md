@@ -16,4 +16,4 @@ This presentation as evolved. There are now branches for the different version o
 * Devoxx Belgium 2015 : devoxxbe branch https://github.com/jollivetc/debugJS/tree/devoxxbe
 * Codeurs en Seine 2015 : codeursEnSeine branch : https://github.com/jollivetc/debugJS/tree/codeursEnSeine
 * Devfest 2016 : devfest branch : https://github.com/jollivetc/debugJS/tree/devfest
-* Brow Bag Lunch long version : bbl2 branch https://github.com/jollivetc/debugJS/tree/bbl2
+* Brow Bag Lunch long version : bbl2 branch https://github.com/jollivetc/debugJS/tree/afup
